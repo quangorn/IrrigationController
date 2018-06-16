@@ -64,8 +64,6 @@ int main(void)
 	//Init LED and Relay
 	DDRB |= (1 << DDB0) | (1 << DDB3);
 	
-	//char i = 0;
-	//uint8_t nADC;
 	while (1)
 	{
 		relayOff();
@@ -76,8 +74,7 @@ int main(void)
 			ADCSRA |= (1 << ADSC);  //Start A2D Conversions			
 			uint8_t tempMin = eeprom_read_byte(&TEMP_MIN);
 			uint8_t tempMax = eeprom_read_byte(&TEMP_MAX);
-			int16_t tempAvg = eeprom_read_byte(&TEMP_AVG); //((int16_t)tempMin + (int16_t)tempMax) / 2;
-			//int16_t tempSize = ((int16_t)tempMax - (int16_t)tempMin) / 2;
+			int16_t tempAvg = eeprom_read_byte(&TEMP_AVG);
 			int16_t adcVal = ADCH;
 			if (adcVal < tempMin) {
 				adcVal = tempMin;
