@@ -1,0 +1,5 @@
+syntax: regexp
+.vs
+^Irrigation13A/Debug
+^Irrigation13A/Release
+Irrigation13A.componentinfo.xml
