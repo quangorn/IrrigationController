@@ -44,7 +44,7 @@ const uint8_t TEMP_MIN EEMEM = 84;
 const uint8_t TEMP_AVG EEMEM = 113;
 const uint8_t TEMP_MAX EEMEM = 141;
 
-const uint32_t WAIT_CYCLES EEMEM = (uint32_t)12 * 3600;
+const uint32_t WAIT_CYCLES EEMEM = (uint32_t)18 * 3600;
 const uint32_t RELAY_ON_SECONDS EEMEM = (uint32_t)2 * 60;
 
 void delay10ms(uint16_t period) {
