@@ -40,12 +40,12 @@ void relayOff() {
 //30grad 2.77V = 141
 //35grad 3.03V = 154
 //40grad 3.27V = 166
-const uint8_t TEMP_MIN EEMEM = 84;
-const uint8_t TEMP_AVG EEMEM = 113;
-const uint8_t TEMP_MAX EEMEM = 141;
+const uint8_t TEMP_MIN EEMEM = 95;
+const uint8_t TEMP_AVG EEMEM = 127;
+const uint8_t TEMP_MAX EEMEM = 154;
 
-const uint32_t WAIT_CYCLES EEMEM = (uint32_t)18 * 3600;
-const uint32_t RELAY_ON_SECONDS EEMEM = (uint32_t)2 * 60;
+const uint32_t WAIT_CYCLES EEMEM = (uint32_t)24 * 3600;
+const uint32_t RELAY_ON_SECONDS EEMEM = (uint32_t)7 * 60;
 
 void delay10ms(uint16_t period) {
 	while (period--) {
