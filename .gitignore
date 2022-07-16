@@ -1,0 +1,4 @@
+firmware/.idea/*
+firmware/cmake-build-*/*
+firmware/cmake_install.cmake
+firmware/out/*
