@@ -22,9 +22,11 @@ void relayOff() {
 	PORTB |= 1 << PORTB3;
 }
 
-const uint32_t WAIT_CYCLES EEMEM = (uint32_t)12 * 3600;
-const uint32_t RELAY_ON_SECONDS EEMEM = (uint32_t)4 * 60;
+const uint32_t WAIT_CYCLES EEMEM = (uint32_t)24 * 3600;
+const uint32_t RELAY_ON_SECONDS EEMEM = (uint32_t)20 * 60;
 
+#pragma clang diagnostic push
+#pragma ide diagnostic ignored "EndlessLoop"
 int main(void)
 {
 	//Init LED and Relay
@@ -49,3 +51,4 @@ int main(void)
 		}
 	}
 }
+#pragma clang diagnostic pop
