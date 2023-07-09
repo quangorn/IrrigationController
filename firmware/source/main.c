@@ -23,7 +23,7 @@ void relayOff() {
 }
 
 const uint32_t WAIT_CYCLES EEMEM = (uint32_t)24 * 3600;
-const uint32_t RELAY_ON_SECONDS EEMEM = (uint32_t)20 * 60;
+const uint32_t RELAY_ON_SECONDS EEMEM = (uint32_t)10 * 60;
 
 #pragma clang diagnostic push
 #pragma ide diagnostic ignored "EndlessLoop"
